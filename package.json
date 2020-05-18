@@ -2,10 +2,12 @@
   "name": "github-pages-vue-demo",
   "version": "0.1.0",
   "private": true,
+  "homepage": "git@github.com:tony19-sandbox/github-pages-vue-demo.git",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js --branch gh-pages -m \"Deploy to gh-pages.\""
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -20,6 +22,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "vue-gh-pages": "^1.19.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
