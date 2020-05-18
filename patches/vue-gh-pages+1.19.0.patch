@@ -1,0 +1,16 @@
+diff --git a/node_modules/vue-gh-pages/index.js b/node_modules/vue-gh-pages/index.js
+index 61f6ec3..d384f42 100755
+--- a/node_modules/vue-gh-pages/index.js
++++ b/node_modules/vue-gh-pages/index.js
+@@ -106,7 +106,10 @@ function runBuild() {
+                     copyFiles(file, outputDirectory + `/${file}`);
+                 }
+             });
+-            editForProduction();
++            //editForProduction();
++            if (repository !== null) {
++                pushToGhPages();
++            }
+         });
+     });
+ }
